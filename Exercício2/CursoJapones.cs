@@ -10,13 +10,14 @@ namespace Exercício2
     {
         public override string[] Modalidade { get; set; } = { "Completo" };
 
-        public override void Info()
+        public override void Info(int m)
         {
             Console.WriteLine($"Curso: {Nome}");
             Console.WriteLine($"DuracaoCurso: {DuracaoCurso}");
             Console.WriteLine($"Professor: {Professor}");
             Console.WriteLine($"QtdaAlunos: {QtdeAlunos}");
             Console.WriteLine($"Descricao: {Descricao}");
+            Console.WriteLine($"Modalidade: {Modalidade[m - 1]}");
         }
 
         public CursoJapones() : base()

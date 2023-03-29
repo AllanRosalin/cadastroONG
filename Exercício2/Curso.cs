@@ -15,7 +15,7 @@ namespace Exercício2
         public virtual int QtdeAlunos { get; set; }
         public virtual string[] Modalidade { get; set; }
 
-        public abstract void Info();
+        public abstract void Info(int m);
 
         public Curso()
         {
