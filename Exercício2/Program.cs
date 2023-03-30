@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercício2
+namespace Crediaria
 {
     internal class Program
     {
@@ -16,17 +16,60 @@ namespace Exercício2
             Console.Write("1-Inglês, 2-Espanhol, 3-Italiano, 4-Mandarim, 5-Japonês: ");
             int curso = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Digite a quantidade de alunos: ");
-            int QtdeAlunos = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    case 3:
+                        Italiano Italian = new Italiano();
+                        Console.WriteLine();
+                        Console.WriteLine("Descrição: ");
+                        string Descricao = Console.ReadLine();
+                        Console.WriteLine("Duração: ");
+                        string DuracaoCurso = Console.ReadLine();
+                        Console.WriteLine("Professor: ");
+                        string Professor = Console.ReadLine();
+                        Console.WriteLine("Quantidade de Alunos: ");
+                        int QtdeAlunos = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Modalidade: ");
+                        string Modalidade = Console.ReadLine();
+                        Italian.constroi(Descricao, DuracaoCurso, Professor, QtdeAlunos, va);
+                        Italian.Info();
+                        break;
+                    case 4:
+                        Japao Japan = new Japao();
+                        Console.WriteLine();
+                        Console.WriteLine("Descrição: ");
+                        string Descricao = Console.ReadLine();
+                        Console.WriteLine("Duração: ");
+                        string DuracaoCurso = Console.ReadLine();
+                        Console.WriteLine("Professor: ");
+                        string Professor = Console.ReadLine();
+                        Console.WriteLine("Quantidade de Alunos: ");
+                        int QtdeAlunos = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Modalidade: ");
+                        string Modalidade = Console.ReadLine();
+                        Japan.constroi(Descricao, DuracaoCurso, Professor, QtdeAlunos, va);
+                        Japan.Info();
+                        break;
 
-            Console.Write("Digite a duração do curso: ");
-            string DuracaoCurso = Console.ReadLine();
+                    case 5:
+                        Mandarim Mandariam = new Mandarim();
+                        Console.WriteLine();
+                        Console.WriteLine("Descrição: ");
+                        string Descricao = Console.ReadLine();
+                        Console.WriteLine("Duração: ");
+                        string DuracaoCurso = Console.ReadLine();
+                        Console.WriteLine("Professor: ");
+                        string Professor = Console.ReadLine();
+                        Console.WriteLine("Quantidade de Alunos: ");
+                        int QtdeAlunos = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Modalidade: ");
+                        string Modalidade = Console.ReadLine();
+                        Mandariam.constroi(Descricao, DuracaoCurso, Professor, QtdeAlunos, va);
+                        Mandariam.Info();
+                        break;
 
-            Console.WriteLine("Digite a descrição do curso: ");
-            string Descricao = Console.ReadLine();
-
-            Console.WriteLine("Digite o nome do professor: ");
-            string Professor = Console.ReadLine();
+                    case 6:
+                        cur = true;
+                        break;
 
             int modalidade;
 
